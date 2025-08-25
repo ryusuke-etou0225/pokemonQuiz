@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>乱数確認ページ</h1>
+    <button type="submit" onclick="add()">乱数生成</button>
+
+    <p id="out0"></p>
+    <p id="out1"></p>
+    <p id="out2"></p>
+    <p id="out3"></p>
+    <p id="out4"></p>
+    <p id="out5"></p>
+    <p id="out6"></p>
+    <p id="out7"></p>
+    <p id="out8"></p>
+
+    <script>
+        function add(){
+            var random_0 = Math.floor(Math.random()*905)+1;
+            var random_1 = Math.floor(Math.random()*151)+1;
+            var random_2 = Math.floor(Math.random()*100)+152;
+            var random_3 = Math.floor(Math.random()*135)+252;
+            var random_4 = Math.floor(Math.random()*107)+387;
+            var random_5 = Math.floor(Math.random()*156)+494;
+            var random_6 = Math.floor(Math.random()*72)+650;
+            var random_7 = Math.floor(Math.random()*86)+722;
+            var random_8 = Math.floor(Math.random()*98)+808;
+            var randam = [random_0,random_1,random_2,random_3,random_4,random_5,random_6,random_7,random_8]
+
+            for(i=0; i<9; i++){
+                document.getElementById("out"+i).textContent += randam[i]+",　";
+            }
+        }
+    </script>
+</body>
+</html>

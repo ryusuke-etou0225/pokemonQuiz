@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokemon</title>
+    <link rel="stylesheet" href="../css/Pokemon.css">
+    <link rel="shortcut icon" href="../image/ico.png">
+</head>
+<body>
+    <div class="content">
+        <div class="width">
+            <div class="content_01" id="content_01"></div>
+            <div class="content_02" id="content_02"></div>
+        </div>
+        <div class="width">
+            <div class="content_03" id="content_03">問題数：1問　</div>
+            <div class="content_04" id="content_04">経過時間：0分0秒0</div>
+        </div>
+    </div>
+
+    <p class="question">このポケモンの名前は？</p>
+
+    <div class="question_img" id="out"></div>
+    <!-- inputタグのtypeがsearchなのは予測変換を表示させないため -->
+    <input type="search" autocomplete="off" id="name">
+
+    <div class="button">
+        <button type="submit" onclick="Answer()">回答する</button>
+    </div>
+
+    <div class="copy">コピペ用<br>♂　♀</div>
+
+    <script src="../javascript/zukan.js"></script>
+    <script src="../javascript/Pokemon.js"></script>
+</body>
+</html>
