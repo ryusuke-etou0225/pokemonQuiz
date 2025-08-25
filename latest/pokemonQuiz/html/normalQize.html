@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>難易度：Normal</title>
+    <link rel="stylesheet" href="../css/Pokemon.css">
+    <link rel="shortcut icon" href="../image/ico.png">
+    <script src="https://unpkg.com/wanakana"></script>
+    <script src="../src/constants/const_pokename.js"></script>
+    <script src="../src/constants/const_common.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="width">
+            <div class="content_01" id="content_01">正解数：0/15　</div>
+            <div class="content_02" id="content_02">不正解数：0/15　</div>
+        </div>
+        <div class="width">
+            <div class="content_03" id="content_03">問題数：1問　</div>
+            <div class="content_04" id="content_04">経過時間：0分0秒</div>
+        </div>
+    </div>
+
+    <p class="question">このポケモンの名前は？</p>
+
+    <div class="question_img" id="out"></div>
+    <!-- inputタグのtypeがsearchなのは予測変換を表示させないため -->
+    <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="name">
+
+    <div class="button">
+        <button type="submit" id="Answer">回答する</button>
+    </div>
+
+    <div class="copy">コピペ用<br>♂　♀</div>
+
+    <script>
+        const input = document.getElementById("name");
+        wanakana.bind(input, { IMEMode: "toKatakana" });
+    </script>
+    <script src="../src/utils/random.js"></script>
+    <script src="../src/utils/timeMeasurement.js"></script>
+    <script src="../src/services/normalAnswer.js"></script>
+    <script src="../src/utils/keydown.js"></script>
+</body>
+</html>

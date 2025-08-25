@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結果ページ</title>
+    <link rel="stylesheet" href="../css/result.css">
+    <link rel="shortcut icon" href="../image/ico.png">
+    <script src="../src/constants/const_pokename.js"></script>
+    <script src="../src/constants/const_common.js"></script>
+</head>
+<body>
+    <div class="ul" id="out1-1"></div>
+
+    <div class="button_1">
+        <button type="submit" onclick="Return()">難易度を選び直す</button>
+        <button tupe="submit" onclick="tryAgain()">同じ難易度で再挑戦</button>
+    </div><br>
+
+    <div id="result"></div><br>
+
+    <div class="button_2">
+        <button type="submit" onclick="Return()">スタート画面に戻る</button>
+    </div><br>
+
+    <script src="../src/utils/returnIndex.js"></script>
+    <script src="../src/utils/tryAgain.js"></script>
+    <script src="../src/components/createTable.js"></script>
+    <script src="../src/services/result.js"></script>
+</body>
+</html>
