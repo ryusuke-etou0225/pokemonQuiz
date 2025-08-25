@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stare</title>
+    <link rel="stylesheet" href="css/start.css">
+    <link rel="shortcut icon" href="image/ico.png">
+    <script src="src/constants/const_common.js"></script>
+</head>
+<body>
+    <div class="content_1">
+        <h1 class="title">Pokémon名前当てクイズ</h1>
+    </div><br>
+
+    <article>
+        <section class="content_2">
+            <h2 class="center">サイトの説明</h2>
+            <p class="center">このサイトはポケモンの画像が出るので、ポケモンの名前を当てるクイズができるサイトです</p>
+            <h2 class="center">ルール</h2>
+            <p class="center">入力フォームにポケモンの名前を入力します。Enterキーで解答もできます<br>完全解答で正解になります。（例、正解→フシギダネ　回答→フシギダね　これは不正解になります）<br>登場世代は、第一世代～第八世代　全国図鑑No.905まで</p>
+        </section>
+    </article><br>
+
+    <div class="center">
+        <label for="generation">
+            <select id="generation">
+                <option value="zenkoku" selected>全国図鑑</option>
+                <option value="first_generation">第1世代</option>
+                <option value="second_generation">第2世代</option>
+                <option value="third_generation">第3世代</option>
+                <option value="fourth_generation">第4世代</option>
+                <option value="fifth_generation">第5世代</option>
+                <option value="sixth_generation">第6世代</option>
+                <option value="seven_generation">第7世代</option>
+                <option value="eighth_generation">第8世代</option>
+                <!-- <option value="ninth_generation">第9世代</option> -->
+            </select>
+        </label>
+        <label for="level">
+            <select id="level">
+                <option value="normal" selected>難易度：Normal</option>
+                <option value="hard">難易度：Hard</option>
+                <option value="veryhard">難易度：VeryHard</option>
+                <option value="Infinity">難易度：Infinity</option>
+            </select>
+        </label>
+    </div><br>
+
+    <div class="center">
+        <button type="submit" onclick="Start()">クイズを始める</button>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+.button_1{
+    text-align: center;
+    margin-top: 530px;
+    margin-bottom: 50px;
+}
+.button_2{
+    text-align: center;
+}
+.ul{
+    width: 445px;
+    height: 420px;
+    border: 2px solid black;
+    padding-top: 20px;
+    margin: 0 auto;
+    background-color: white;
+    writing-mode: vertical-rl;
+    font-size: 50px;
+    font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+    position: absolute;
+    top:40%;
+    left:50%;
+    display:inline;
+    transform:translate(-50%, -50%);
+}
+
+body{
+    background-image: url(../image/backgound_pokemon03.jpg);
+}
+h1{
+    text-align: center;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+button{
+    width: 180px;
+    height: 50px;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+table{
+    width: 700px;
+    margin: 0 auto;
+    border: 3px solid black;
+    background-color: white;
+}
+th{
+    padding: 10px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width:800px){
+    table{
+        width: 80%;
+        margin: 0 auto;
+        border: 3px solid black;
+        background-color: white;
+    }
+    img{
+        width: 30%;
+        height: 30%;
+    }
+}

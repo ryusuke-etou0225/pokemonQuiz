@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+.content{
+    background-color: white;
+    width: 950px;
+    height: 50px;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.content_01{
+    margin-left: 22px;
+    font-size: 25px;
+    padding: 6px;
+    float: left;
+}
+.content_02{
+    font-size: 25px;
+    padding: 6px;
+    float: left;
+}
+.content_03{
+    font-size: 25px;
+    padding: 6px;
+    float: left;
+}
+.content_04{
+    font-size: 25px;
+    padding: 6px;
+    float: left;
+}
+.question{
+    background-color: white;
+    font-size: 40px;
+    width: 450px;
+    padding-left: 10px;
+    border: 2px solid black;
+    margin-left: 17%;
+}
+.question_img{
+    margin-left: 20%;
+}
+.copy{
+    background-color: white;
+    float: left;
+    width: 180px;
+    height: 85px;
+    border: 2px solid black;
+    margin: 40px 0px 0px 12.5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+body{
+    background-image: url(../image/background_pokemon02.jpg);
+}
+img{
+    width: 350px;
+    height: 350px;
+    float: left;
+}
+input{
+    margin: 10px 0px 0px 10%;
+    padding-left: 10px;
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+}
+button{
+    width: 120px;
+    height: 45px;
+    margin: 50px 0px 0px 15%;
+    font-size: 20px;
+}
+
+@media only screen and (max-width:980px){
+    .content{
+        background-color: white;
+        width: 70%;
+        height: 100px;
+        border: 2px solid black;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .width{
+        width: 450px;
+        height: 50px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .content_01{
+        margin-left: 22px;
+        font-size: 24px;
+        padding: 6px;
+        float: left;
+    }
+    .content_02{
+        font-size: 24px;
+        padding: 6px;
+        float: left;
+    }
+    .content_03{
+        margin-left: 22px;
+        font-size: 23px;
+        padding: 6px;
+        clear: both;
+    }
+    .content_04{
+        font-size: 23px;
+        padding: 6px;
+        float: left;
+    }
+    .question{
+        background-color: white;
+        font-size: 40px;
+        width: 450px;
+        border: 2px solid black;
+        margin: 0 auto;
+        margin-top: 20px
+    }
+    .question_img{
+        width: 220px;
+        height: 220px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    img{
+        width: 220px;
+        height: 220px;
+    }
+    input{
+        width: 250px;
+        height: 50px;
+        font-size: 30px;
+        margin-left: 15%;
+    }
+    button{
+        width: 120px;
+        height: 45px;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 22%;
+        float: left;
+    }
+    .copy{
+        background-color: white;
+        width: 180px;
+        height: 85px;
+        border: 2px solid black;
+        margin-left: 17%;
+        margin-top: -50px;
+        font-size: 30px;
+        text-align: center;
+    }
+}
